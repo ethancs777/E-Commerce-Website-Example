@@ -138,9 +138,7 @@
     height: auto;
 }
 .search-filter-bar {
-    position: sticky;
-    top: 3.5rem;
-    z-index: 100;
+    /* Removed sticky/fixed so it scrolls with the page */
     padding: 1em 0 1em 0;
     display: flex;
     gap: 2em;
