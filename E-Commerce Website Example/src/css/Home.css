@@ -199,9 +199,14 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    position: sticky;
-    top: 5rem;
-    height: fit-content;
+    position: fixed;
+    top: 6rem;
+    right: 2rem;
+    width: 22rem;
+    max-width: 90vw;
+    z-index: 1500;
+    background: #232323;
+    height: auto;
 }
 .search-filter-bar {
     position: sticky;

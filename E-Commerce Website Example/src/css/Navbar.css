@@ -1,17 +1,18 @@
 .navbar {
-        position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
-        width: 100vw;
-        padding: 0.7rem 1rem;
-        font-size: 1rem;
-        z-index: 1000;
-        background: black;
-        box-sizing: border-box;
-        min-height: 3.2rem;
-        display: flex;
-        align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    padding: 0.7rem 1rem;
+    font-size: 1rem;
+    z-index: 2000;
+    background: black;
+    box-sizing: border-box;
+    min-height: 3.2rem;
+    display: flex;
+    align-items: center;
+    pointer-events: auto;
 }
 
 .navbar-flex {
