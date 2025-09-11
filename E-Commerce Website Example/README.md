@@ -1,12 +1,8 @@
-# React + Vite
+# E-Commerce Website Example
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This website is a basic front-end showing dummy data for items that would be part of an online store. 
+The API used to import the data is Fake Store API, which is available online publicly and for free.
+As of right now, the webpage has very minimal styling applied, most of the styling is to get the elements in place, more colorful and aesthetic features will come later.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+The webpage includes a login to simulate a user logging into the website and then keeps the name in local storage to cache the name until the user logs out. Logging out simply removes the username from local storage.
+The webpage also includes a simulated checkout in which the user can add items to the cart, remove items, change the quantity of items, and clear the entire cart all together.
