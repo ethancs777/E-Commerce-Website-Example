@@ -1,6 +1,5 @@
-
 import React from 'react';
-import '../css/Checkout.css';
+import '../css/checkout.css';
 import { useShoppingCart } from '../contexts/useShoppingCart';
 
 function Checkout() {
