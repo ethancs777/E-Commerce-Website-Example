@@ -1,14 +1,17 @@
 .navbar {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    width: 100vw;
-    padding: 0.7rem;
-    font-size: 1rem;
-    z-index: 1000;
-    background: black;
-    box-sizing: border-box;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        width: 100vw;
+        padding: 0.7rem 1rem;
+        font-size: 1rem;
+        z-index: 1000;
+        background: black;
+        box-sizing: border-box;
+        min-height: 3.2rem;
+        display: flex;
+        align-items: center;
 }
 
 .navbar-flex {
@@ -47,4 +50,23 @@
     font-family: 'Arial', sans-serif;
     font-size: .75rem;
     padding: .25rem;
+}
+
+@media (max-width: 700px) {
+    .navbar {
+        padding: 0.5rem 0.3rem;
+        font-size: 0.95rem;
+        min-height: 2.5rem;
+    }
+    .navbar ul {
+        gap: 0.5rem;
+        padding-right: 0.5rem;
+    }
+    .navbar-flex {
+        justify-content: center;
+    }
+    .navbar button {
+        font-size: 0.7rem;
+        padding: 0.15rem 0.5rem;
+    }
 }
