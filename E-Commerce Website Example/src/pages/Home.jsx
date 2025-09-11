@@ -33,32 +33,28 @@ function Home({ userName }) {
     return (
         <div className="home-main-layout">
             <h1 className="top-left-header"> <strong>Welcome, {userName}</strong></h1>
-            <div className="home-content-row">
-                <div className="container">
-                    <ShoppingItem products={filteredProducts} />
+            <div className="search-filter-bar" style={{margin: '2.5rem auto 1.5rem auto', maxWidth: '65rem', width: '100%'}}>
+                <input
+                    className="search-input"
+                    type="text"
+                    placeholder="Search products..."
+                    value={search}
+                    onChange={e => setSearch(e.target.value)}
+                />
+                <div className="category-radio-group">
+                    <label className="category-radio-label">
+                        <input type="radio" name="category" value="all" checked={category === 'all'}  onChange={() => setCategory('all')}/> All
+                    </label>
+                    <label className="category-radio-label">
+                        <input type="radio" name="category" value="men's clothing" checked={category === "men's clothing"} onChange={() => setCategory("men's clothing")} /> Men's Clothing
+                    </label>
+                    <label className="category-radio-label">
+                        <input type="radio" name="category" value="women's clothing" checked={category === "women's clothing"} onChange={() => setCategory("women's clothing")} /> Women's Clothing
+                    </label>
                 </div>
-                <aside className="sidebar-filter">
-                    <div className="search-filter-bar">
-                        <input
-                            className="search-input"
-                            type="text"
-                            placeholder="Search products..."
-                            value={search}
-                            onChange={e => setSearch(e.target.value)}
-                        />
-                        <div className="category-radio-group">
-                            <label className="category-radio-label">
-                                <input type="radio" name="category" value="all" checked={category === 'all'}  onChange={() => setCategory('all')}/> All
-                            </label>
-                            <label className="category-radio-label">
-                                <input type="radio" name="category" value="men's clothing" checked={category === "men's clothing"} onChange={() => setCategory("men's clothing")} /> Men's Clothing
-                            </label>
-                            <label className="category-radio-label">
-                                <input type="radio" name="category" value="women's clothing" checked={category === "women's clothing"} onChange={() => setCategory("women's clothing")} /> Women's Clothing
-                            </label>
-                        </div>
-                    </div>
-                </aside>
+            </div>
+            <div className="container">
+                <ShoppingItem products={filteredProducts} />
             </div>
         </div>
     );
