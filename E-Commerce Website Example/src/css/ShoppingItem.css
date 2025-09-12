@@ -11,17 +11,17 @@
         box-sizing: border-box;
         gap: 0.5rem;
         border-radius: 0.5rem;
-        background: #232323;
         /* Add margin-bottom to prevent overlap, ensure background fills */
     }
     .shopping-item img {
-        width: 80vw;
-        max-width: 180px;
-        min-width: 60px;
-        height: auto;
-        margin: 0 auto 0.5rem auto;
-        object-fit: contain;
-        display: block;
+        width: 100% !important;
+        max-width: 180px !important;
+        height: auto !important;
+        margin: 0 auto 0.5rem auto !important;
+        object-fit: contain !important;
+        display: block !important;
+        min-width: 0 !important;
+        flex-shrink: 1 !important;
     }
     .shopping-item-details {
         display: flex;
@@ -76,7 +76,7 @@
     margin-left: auto;
     margin-right: auto;
     border-radius: 0.7rem;
-    background: #232323;
+    background: #fffff2;
     /* Responsive features for all displays */
 }
 
@@ -95,7 +95,7 @@
 
 .shopping-item-details h2, .shopping-item-details p {
     margin: 0;
-    color: white;
+    color: black;
     text-align: left;
     font-size: 1.1rem;
     word-break: break-word;

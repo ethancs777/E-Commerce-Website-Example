@@ -22,7 +22,8 @@ a:hover {
 }
 
 body {
-  background: rgba(53, 138, 242, 1) 0%;
+  background: #f28435;
+  background-image: url("data:image/svg+xml;utf8,<svg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'><circle cx='2' cy='2' r='2' fill='white' fill-opacity='0.12'/></svg>");
   font-family: 'Arial', sans-serif;
   margin: 0;
   min-width: 320px;
@@ -71,15 +72,8 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
+@media (max-width: 1375px){
+  body{
+    background:#f28435 100%;
   }
 }

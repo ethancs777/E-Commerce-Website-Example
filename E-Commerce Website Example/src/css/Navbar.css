@@ -37,10 +37,11 @@
     color: white;
     font-family: 'Arial', sans-serif;
     font-weight: bold;
+    transition: color 0.2s;
 }
+
 .navbar a:hover {
-    color: #1eff00;
-    text-decoration-color: #1eff00;
+    color: #f28435;
     cursor: pointer;
 }
 
