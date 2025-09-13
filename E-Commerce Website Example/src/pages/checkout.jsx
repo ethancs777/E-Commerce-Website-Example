@@ -26,7 +26,7 @@ function Checkout() {
               {cart.map(item => (
                 <tr key={item.id}>
                   <td className="checkout-td item">{item.title}</td>
-                  <td className="checkout-td price">{item.price} USD</td>
+                  <td className="checkout-td price">${Number(item.price).toFixed(2)}</td>
                   <td className="checkout-td quantity">
                     <input
                       type="text"
